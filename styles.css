@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #eaeaea;
+  font-family: sans-serif;
+}
+
+#info-panel {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 300px;
+  box-shadow: 0 0 10px #00000022;
+}
+
+#scene-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+#scene-selector button {
+  background: #ddd;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#scene-selector button:hover {
+  background: #ccc;
+}
+
+#scene-selector button.active {
+  background: #1f77b4;
+  color: white;
+  border-color: #1f77b4;
+}
+
+#force-control {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+#force-control label {
+  font-weight: bold;
+}
+
+#force-control input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#mass-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.mass-control-group {
+  display: grid;
+  grid-template-columns: 50px 60px 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.mass-control-group label {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.mass-control-group input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.mass-control-group span {
+  font-size: 0.9em;
+  white-space: nowrap;
+}
+
+#mass-controls button {
+  background: #2ca02c;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+canvas {
+  display: block;
+}

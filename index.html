@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulador de las Leyes de Newton</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="info-panel">
+    <h1>Simulador 3D - Leyes de Newton</h1>
+    <div id="scene-selector">
+      <button id="btn-law1" class="active">1ª Ley: Inercia</button>
+      <button id="btn-law2">2ª Ley: F=ma</button>
+      <button id="btn-law3">3ª Ley: Acción-Reacción</button>
+    </div>
+    <div id="scene-info">
+      <!-- Scene-specific info will be injected here -->
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/cannon-es@0.20.0/dist/cannon-es.min.js"></script>
+  <script src="main.js" type="module"></script>
+</body>
+</html>
